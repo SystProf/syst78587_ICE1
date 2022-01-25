@@ -23,7 +23,7 @@ public class CardTrick {
         {
             Card c = new Card();
              }
-        
+        System.out.println("Hello");
          }
     
 }
