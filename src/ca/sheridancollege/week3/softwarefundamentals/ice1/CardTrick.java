@@ -22,6 +22,7 @@ public class CardTrick {
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
+            System.out.println(c.getSuit());
              }
         System.out.println("Hello");
          }
