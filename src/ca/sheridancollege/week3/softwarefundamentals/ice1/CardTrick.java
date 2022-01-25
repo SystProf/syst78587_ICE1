@@ -20,7 +20,8 @@ import java.util.Scanner;
 public class CardTrick {
     
     public static void main(String[] args)
-    {
+    { //1 & 2. Cloned ICE1 repo then created new local branch - SURESH_SHARMA_Ex1
+        //3. CardTrick class modified to input 7 random card objects into magicHand array
         Card[] magicHand = new Card[7];
         
         for (int i=0; i<magicHand.length; i++)
@@ -35,7 +36,9 @@ public class CardTrick {
         for (int i = 0; i<magicHand.length; i++){
             System.out.println(magicHand[i].getValue() + " " + magicHand[i].getSuit());
         }
-         
+        
+        //4. Modified CardTrick class asking user for input and scanning array to find a match
+        //invokes printInfo() method if user inputed card matches any of the 7 random cards in magicHand array
         Scanner in = new Scanner (System.in);
         System.out.println("Pick a card, any card");
         System.out.println("Value (integer value between 1-13): ");
@@ -61,7 +64,10 @@ public class CardTrick {
         }
         
     }
-    
+    //5. new branch pushed to remote repo
+    //6. printInfo() method edited on GitHub 
+    //7. Fetched, then merged updated branch from GitHub to IDE
+    //8. I'm done!
     public static void printInfo(){
         System.out.println("Your card exists in the hand of 7 random cards.");
         System.out.println("My name is Suresh Sharma, student ID is 991657093, I own two dogs");
