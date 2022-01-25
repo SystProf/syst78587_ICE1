@@ -53,8 +53,9 @@ public class Card {
     }
     
     public static String printInfo(){
-        return "Your card: " + playerSuit + " " + playerValue + ", was in the deck of cards, matching " + suit + " " + 
-                value;
+       return "My name is William Klemmer, I am in Computer Programming at Sheridan College and enjoy cars and video games.";
+        //return "Your card: " + playerSuit + " " + playerValue + ", was in the deck of cards, matching " + suit + " " + 
+                //value;
     }
    
    
