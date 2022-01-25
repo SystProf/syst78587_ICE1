@@ -64,6 +64,7 @@ public class CardTrick {
     
     public static void printInfo(){
         System.out.println("Your card exists in the hand of 7 random cards.");
+        System.out.println("My name is Suresh Sharma, student ID is 991657093, I own two dogs");
     }
     
 }
