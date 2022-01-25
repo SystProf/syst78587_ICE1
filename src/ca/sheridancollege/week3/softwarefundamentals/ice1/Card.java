@@ -18,8 +18,10 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  */
 public class Card {
 
-   private String suit; //clubs, spades, diamonds, hearts
-   private int value;//1-13
+   private static String suit; //clubs, spades, diamonds, hearts
+   private static int value;//1-13
+   public static String playerSuit;
+   public static int playerValue;
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
     /**
@@ -48,6 +50,11 @@ public class Card {
      */
     public void setValue(int value) {
         this.value = value;
+    }
+    
+    public static String printInfo(){
+        return "Your card: " + playerSuit + " " + playerValue + ", was in the deck of cards, matching " + suit + " " + 
+                value;
     }
    
    
