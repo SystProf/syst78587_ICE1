@@ -13,7 +13,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author dancye
- * @modified by Megha Patel
+ * @modified by Henry J
  * 
  */
 public class Card {
@@ -22,6 +22,15 @@ public class Card {
    private int value;//1-13
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+
+    public Card(){
+        this.suit = SUITS[(int)(Math.random() * SUITS.length)];
+        this.value = (int)(Math.random() * 14);
+        // System.out.println( getSuit() );
+        // System.out.println( getValue() );
+    }
+
+
     /**
      * @return the suit
      */
