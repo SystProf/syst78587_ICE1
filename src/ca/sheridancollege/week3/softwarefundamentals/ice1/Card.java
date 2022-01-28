@@ -13,8 +13,8 @@ import java.util.Scanner;
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
- * @author dancye
- * @modified by Megha Patel
+ * @author Sathya Jeyachandran
+ * @modified by Sathya Jeyachandran
  * @modified by Sathya Jeyachandran
  * 
  */
@@ -31,9 +31,9 @@ public class Card {
    public Card(){
        Random r=new Random();
        int index=r.nextInt(SUITS.length);
-       int num=r.nextInt((13-1)+1)+1;
+       int number=r.nextInt((13-1)+1)+1;
         this.suit = SUITS[index];
-       this.value = num;
+       this.value = number;
    
    }
     public String getSuit() {
@@ -55,7 +55,7 @@ public class Card {
     }
 
     /**
-     * @param value the value to set
+     * @param value 
      */
     public void setValue(int value) {
         this.value = value;
@@ -68,7 +68,7 @@ public class Card {
     
     public void printInfo(){
         
-        System.out.println(value + " of " + suit + " was in the magic hands!");
+        System.out.println(value + " of " + suit + " in the random hand");
     }
     
 }
