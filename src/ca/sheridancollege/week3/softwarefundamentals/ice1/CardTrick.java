@@ -12,19 +12,56 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * @author dancye
  * @modified by Megha Patel
  * @modified by Murtaza Mian Jan 25, 2022
- * 
+ * @modified by Jacob O'Hearon
  */
-public class CardTrick {
+
+import java.util.Scanner;
+
+public class CardTrick 
+{
     
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
+        Scanner input = new Scanner(System.in);
+        Card c = new Card();
+        String[] suits = new String[7];
+        int[] values = new int[7];
+        boolean answer = false;
         
-        for (int i=0; i<magicHand.length; i++)
+        for (int i=0;i<magicHand.length;i++) 
         {
-            Card c = new Card();
-             }
+            c.setValue((int)(Math.random() * 13) + 1);
+            c.setSuit(Card.SUITS[((int)(Math.random()*3))]);
+            System.out.println(c.getSuit() + " " + c.getValue());
+            suits[i] = c.getSuit();
+            values[i] = c.getValue();
+        }
         
-         }
-    
+        System.out.print("Pick a card, any card: ");
+        String guess1 = input.next();
+        String guess2 = input.next();
+            
+        System.out.println("---------------");
+        
+        for(int i=0;i<magicHand.length;i++)
+        {
+            if(suits[i].equals(guess1))
+            {
+                if(guess2.equals(String.valueOf(values[i])))
+                {
+                    answer = true;
+                }
+            }
+        }
+        
+        if(answer == true)
+        {
+            System.out.println("You guessed it!");   
+        }
+        else
+        {
+            System.out.println("Better luck next time!");
+        }
+    }
 }
