@@ -60,13 +60,17 @@ public class CardTrick
         }
         else
         {  
-            printInfo("Better luck next time..");
+            System.out.println("Better luck next time..");
         }
         
     }
     
     public static void printInfo(String output)
     {
-        System.out.println(output);
+        System.out.println("You guessed it!");
+        
+        //Personalized Print Info thingy McBob
+        System.out.println("Hello, my Name's Jacob and I've been programming for a few years");
+        System.out.println("It's slightly unfortunate we're all online but not having to commute is quite nice");
     }
 }
