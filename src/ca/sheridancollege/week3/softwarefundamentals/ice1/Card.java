@@ -13,15 +13,22 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author dancye
+ * @author Abarna Premachandran - Jan/27/2022
  * @modified by Megha Patel
- * 
+ * @modified by Abarna Premachandran - 991430788
  */
 public class Card {
+    private String suit; //clubs, spades, diamonds, hearts
+    private String value;//1-13
 
-   private String suit; //clubs, spades, diamonds, hearts
-   private int value;//1-13
+    public static final String[] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"}; //Array for card suits
+    public static final String[] VALUE = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "K", "Q", "J"};// Array for card value
+    public int randomIndex1 = (int) (Math.random() * SUITS.length);
+    public int randomIndex2 = (int) (Math.random() * VALUE.length);
+    public String card;
+    public String userC;
+    
 
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
     /**
      * @return the suit
      */
@@ -35,21 +42,51 @@ public class Card {
     public void setSuit(String suit) {
         this.suit = suit;
     }
-
     /**
+     * 
      * @return the value
      */
-    public int getValue() {
+    public String getValue() {
         return value;
     }
-
     /**
+     * 
      * @param value the value to set
      */
-    public void setValue(int value) {
+    public void setValue(String value) {
         this.value = value;
     }
-   
-   
-    
+    /**
+     * 
+     * @return random suits from the suit array
+     */
+    public String newSuit() {
+
+        return SUITS[randomIndex1];
+    }
+    /**
+     * 
+     * @return random value from the value array
+     */
+    public String newValue() {
+        return VALUE[randomIndex2];
+    }
+    /**
+     * 
+     * @return random card with value and suit
+     */
+    public String newHand() {
+        card=  VALUE[randomIndex2]+ " of " +SUITS[randomIndex1];
+        return card;
+    }
+    /**
+     * takes users input to create a card with value and suit
+     * @param vUser
+     * @param sUser
+     * @return 
+     */
+ public String userCard(int vUser,int sUser) {
+         userC= VALUE[vUser]+ " of " +SUITS[sUser];
+        return userC;
+ }
 }
