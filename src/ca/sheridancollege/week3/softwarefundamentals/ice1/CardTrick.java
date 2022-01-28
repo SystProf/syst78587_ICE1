@@ -13,8 +13,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
 import java.util.Scanner;
 
 public class CardTrick 
-{
-    
+{   
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
@@ -22,6 +21,7 @@ public class CardTrick
         Card c = new Card();
         String[] suits = new String[7];
         int[] values = new int[7];
+        boolean answer = false;
         
         for (int i=0;i<magicHand.length;i++) 
         {
@@ -32,29 +32,41 @@ public class CardTrick
             values[i] = c.getValue();
         }
         
+        
         System.out.print("Pick a card, any card: ");
         String guessPt1 = input.next();
         String guessPt2 = input.next();
             
         System.out.println("---------------");
+        //--------------------
+//        System.out.println(guessPt1 + "\n" + guessPt2);
+//        System.out.println("---------------");
+        //-------------------
         
         for(int i=0;i<magicHand.length;i++)
         {
-            if(suits[i].equals(guessPt1))
+            if(guessPt1.equals(suits[i]))
             {
                 if(guessPt2.equals(String.valueOf(values[i])))
                 {
-                    printInfo();
+                    answer = true;
                 }
             }
         }
         
-        System.out.println("Better luck next time!");
+        if(answer == true)
+        {
+            printInfo("You guessed it!");
+        }
+        else
+        {  
+            printInfo("Better luck next time..");
+        }
+        
     }
-}
-
-public static void printInfo()
-{
-    System.out.println("You guessed it!");
-    break;
+    
+    public static void printInfo(String output)
+    {
+        System.out.println(output);
+    }
 }
