@@ -69,6 +69,7 @@ public class Card {
     public void printInfo(){
         
         System.out.println(value + " of " + suit + " in the random hand");
+       System.out.println("My name is Sathya Jeyachandran from India, I love my Family, Wish to become great in life");
     }
     
 }
