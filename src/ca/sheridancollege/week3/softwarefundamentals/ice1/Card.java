@@ -9,7 +9,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * add your name as a modifier.
  * @author dancye
  * @modified by Megha Patel
- * @modified by Volodymyr Suprun 2022/01/25
+ * @modified by Volodymyr Suprun 2022/01/28
  * 
  */
 public class Card {
@@ -47,6 +47,7 @@ public class Card {
     }
     
     public void printInfo() {
+        //I'm done
         System.out.println("Hello, My name is Volodymyr Suprun. I am a first year SDNE student.");
         //Switch statement used to print out what rank a card is depending on its value
         switch (this.value) {
