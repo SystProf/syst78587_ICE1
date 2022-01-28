@@ -22,7 +22,6 @@ public class CardTrick
         Card c = new Card();
         String[] suits = new String[7];
         int[] values = new int[7];
-        boolean answer = false;
         
         for (int i=0;i<magicHand.length;i++) 
         {
@@ -45,18 +44,17 @@ public class CardTrick
             {
                 if(guessPt2.equals(String.valueOf(values[i])))
                 {
-                    answer = true;
+                    printInfo();
                 }
             }
         }
         
-        if(answer == true)
-        {
-            System.out.println("You guessed it!");   
-        }
-        else
-        {
-            System.out.println("Better luck next time!");
-        }
+        System.out.println("Better luck next time!");
     }
+}
+
+public static void printInfo()
+{
+    System.out.println("You guessed it!");
+    break;
 }
