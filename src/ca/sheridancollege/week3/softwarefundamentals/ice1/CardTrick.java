@@ -56,20 +56,21 @@ public class CardTrick {
 
         System.out.println(); // empty line for space
 
-        //printing the hand of 7cards
+        /*printing the hand of 7cards
         for (Card c : magicHand) {
 
             System.out.println(c.newHand());
             System.out.println();
         }
+        */
         
         //pick a card game - asking user input to create users card choice
         System.out.println("Pick a card any card!");
 
-        System.out.println("Enter a number form 0-12to make a card selection: 0forAce, 1for2, 2for3, 3for4, 4for5 ,5for6 ,6for7 ,7for8 ,8fpr9 ,9for10 ,10-king,11-queen,12-jack ");
+        System.out.print("Enter a number form 0-12to make a card selection: 0forAce, 1for2, 2for3, 3for4, 4for5 ,5for6 ,6for7 ,7for8 ,8fpr9 ,9for10 ,10-king,11-queen,12-jack: ");
         int userCardValue = selCard.nextInt();
 
-        System.out.println("Enter a number to make a selection: 0-Hearts, 1-Diamonds, 2-Spades, 3-Clubs");
+        System.out.print("Enter a number to make a selection: 0-Hearts, 1-Diamonds, 2-Spades, 3-Clubs: ");
         int userCardSuit = selCard.nextInt();
 
         //calling card using method
@@ -81,28 +82,28 @@ public class CardTrick {
 
         //checking if the card the user picked is in the hand of random 7 cards and printing results
         if (userChoice.userCard(userCardValue, userCardSuit).equals(c0.newHand())) {
-            System.out.println("the card is in the hand");
+            System.out.println("This card is in the hand");
             infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c1.newHand())) {
-            System.out.println("the card is in the hand");
+            System.out.println("This card is in the hand");
             infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c2.newHand())) {
-            System.out.println("the card is in the hand");
+            System.out.println("This card is in the hand");
             infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c3.newHand())) {
-            System.out.println("the card is in the hand");
+            System.out.println("This card is in the hand");
             infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c4.newHand())) {
-            System.out.println("the card is in the hand");
+            System.out.println("This card is in the hand");
             infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c5.newHand())) {
-            System.out.println("the card is in the hand");
+            System.out.println("This card is in the hand");
             infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c6.newHand())) {
-            System.out.println("the card is in the hand");
+            System.out.println("This card is in the hand");
             infoPrint.PrintInfo();
         } else {
-            System.out.println("the card is not in the hand");
+            System.out.println("This card is not in the hand");
         }
 
     }

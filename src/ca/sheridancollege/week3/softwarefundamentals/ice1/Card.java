@@ -90,7 +90,7 @@ public class Card {
         return userC;
  }
     public void PrintInfo(){
-     System.out.println("Abarna Premachandran. course: PSISC - Computer Systems Technology - Information System Engineering CO-OP. Likes: listening to music while working ");
+     System.out.println("I'm done! -- Abarna Premachandran. Course: PSISC - Computer Systems Technology - Information System Engineering CO-OP. Likes: listening to music while working ");
      
  }
 }
