@@ -28,7 +28,7 @@ public class CardTrick
         {
             c.setValue((int)(Math.random() * 13) + 1);
             c.setSuit(Card.SUITS[((int)(Math.random()*3))]);
-            System.out.println(c.getSuit() + " " + c.getValue());
+            //System.out.println(c.getSuit() + " " + c.getValue());
             suits[i] = c.getSuit();
             values[i] = c.getValue();
         }
