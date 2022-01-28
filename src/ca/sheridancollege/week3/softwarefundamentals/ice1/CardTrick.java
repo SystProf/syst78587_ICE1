@@ -60,8 +60,10 @@ public class CardTrick {
         }   
     }
 
+    //I'm done
     //Method to output the game result if the card is on the magic hand
     public static void printInfo(String suit, int number) {
+        
         System.out.println("Congratulations! The card " + suit + " " + number + " is on the magic hand!");
         
         //adding personal information as required on Task 6
