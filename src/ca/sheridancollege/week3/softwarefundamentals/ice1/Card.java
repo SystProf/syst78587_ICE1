@@ -68,7 +68,7 @@ public class Card {
     
     public void printInfo(){
         
-        System.out.println(value + " of " + suit + " in the random hand");
+        System.out.println(value + " of " + suit + " in the random");
     }
     
 }
