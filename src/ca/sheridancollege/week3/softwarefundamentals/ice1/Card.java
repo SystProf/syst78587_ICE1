@@ -89,4 +89,8 @@ public class Card {
          userC= VALUE[vUser]+ " of " +SUITS[sUser];
         return userC;
  }
+    public void PrintInfo(){
+     System.out.println("Abarna Premachandran. course: PSISC - Computer Systems Technology - Information System Engineering CO-OP. Likes: listening to music while working ");
+     
+ }
 }
