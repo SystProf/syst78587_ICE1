@@ -73,25 +73,34 @@ public class CardTrick {
         int userCardSuit = selCard.nextInt();
 
         //calling card using method
+        Card infoPrint=new Card();
         Card userChoice = new Card();
+        
         userChoice.userCard(userCardValue, userCardSuit);
         System.out.println(userChoice.userCard(userCardValue, userCardSuit));
 
         //checking if the card the user picked is in the hand of random 7 cards and printing results
         if (userChoice.userCard(userCardValue, userCardSuit).equals(c0.newHand())) {
             System.out.println("the card is in the hand");
+            infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c1.newHand())) {
             System.out.println("the card is in the hand");
+            infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c2.newHand())) {
             System.out.println("the card is in the hand");
+            infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c3.newHand())) {
             System.out.println("the card is in the hand");
+            infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c4.newHand())) {
             System.out.println("the card is in the hand");
+            infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c5.newHand())) {
             System.out.println("the card is in the hand");
+            infoPrint.PrintInfo();
         } else if (userChoice.userCard(userCardValue, userCardSuit).equals(c6.newHand())) {
             System.out.println("the card is in the hand");
+            infoPrint.PrintInfo();
         } else {
             System.out.println("the card is not in the hand");
         }
