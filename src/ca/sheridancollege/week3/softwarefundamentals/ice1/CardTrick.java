@@ -39,16 +39,16 @@ public class CardTrick
         }
         
         System.out.print("Pick a card, any card: ");
-        String guess1 = input.next();
-        String guess2 = input.next();
+        String guessPt1 = input.next();
+        String guessPt2 = input.next();
             
         System.out.println("---------------");
         
         for(int i=0;i<magicHand.length;i++)
         {
-            if(suits[i].equals(guess1))
+            if(suits[i].equals(guessPt1))
             {
-                if(guess2.equals(String.valueOf(values[i])))
+                if(guessPt2.equals(String.valueOf(values[i])))
                 {
                     answer = true;
                 }
