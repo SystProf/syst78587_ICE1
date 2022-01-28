@@ -47,6 +47,7 @@ public class Card {
     }
     
     public void printInfo() {
+        System.out.println("Hello, My name is Volodymyr Suprun. I am a first year SDNE student.");
         //Switch statement used to print out what rank a card is depending on its value
         switch (this.value) {
             case 1:
