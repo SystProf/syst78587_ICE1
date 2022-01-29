@@ -31,7 +31,7 @@ public class CardTrick {
 //            commented out for debugging
         }
         
-        System.out.print("Guess the SUIT: (1.Hearts 2.Diamonds 3.Spades 4.Clubs): ");
+        System.out.print("Can you guess a card in a hand of 7?\nGuess the SUIT: (1.Hearts 2.Diamonds 3.Spades 4.Clubs): ");
         int suitGuess = input.nextInt();
         System.out.print("Guess a CARD (1-13): ");
         int value = input.nextInt();
@@ -46,12 +46,22 @@ public class CardTrick {
         
         boolean compare = false;
         for (int i=0; i<magicHand.length; i++) {
-            if (magicHand[i].getValue() == value && suit.equals(magicHand[i].getSuit())) {
+            if (magicHand[i].getValue() == value && suit.equals(magicHand[i].getSuit()))
                 compare = true;
-            }
         }
         
-        System.out.println("You guessed: " + (compare == true ? "correctly" : "wrongly"));
+//        System.out.println("You guessed: " + (compare == true ? "correctly" : "wrongly"));
+        if (compare == true)
+            printInfo();
+        else 
+            System.out.println("You guessed incorrectly");
     }
     
+    // the assignment says to invoke the printInfo() method but there is none made so i assume it means to 
+    // CREATE one, and the assignment says to only edit CardTrick.java, i've added it here.
+    public static void printInfo() {
+        
+        System.out.println("You guessed correctly!");
+        System.out.println("INFO ABOUT ME: Name - Murtaza, School - Sheridan College");
+    }
 }
