@@ -45,7 +45,6 @@ public class CardTrick {
         }
         
         boolean compare = false;
-        
         for (int i=0; i<magicHand.length; i++) {
             if (magicHand[i].getValue() == value && suit.equals(magicHand[i].getSuit())) {
                 compare = true;
@@ -53,7 +52,6 @@ public class CardTrick {
         }
         
         System.out.println("You guessed: " + (compare == true ? "correctly" : "wrongly"));
-        
     }
     
 }
