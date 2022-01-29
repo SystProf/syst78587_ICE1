@@ -60,7 +60,7 @@ public class CardTrick {
     // the assignment says to invoke the printInfo() method but there is none made so i assume it means to 
     // CREATE one, and the assignment says to only edit CardTrick.java, i've added it here.
     public static void printInfo() {
-        
+        // I'm done!
         System.out.println("You guessed correctly!");
         System.out.println("INFO ABOUT ME: Name - Murtaza, School - Sheridan College");
     }
