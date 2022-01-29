@@ -15,15 +15,46 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  */
 public class CardTrick {
     
-    public static void main(String[] args)
-    {
+   public static void main(String[] args) {
         Card[] magicHand = new Card[7];
         
-        for (int i=0; i<magicHand.length; i++)
-        {
-            Card c = new Card();
-             }
+        Scanner input = new Scanner(System.in);
         
+        for (int i=0; i<magicHand.length; i++) {
+           
+            magicHand[i] = new Card();
+            magicHand[i].setSuit(Card.SUITS[(int) (Math.random() * 4)]);
+            magicHand[i].setValue((int) (Math.random() * 14));
+            
+          }
+        
+        System.out.println("pick a card : ");
+        System.out.println("select your suit :\n 1.Hearts \n 2.Diamonds \n 3.Spades \n 4.Clubs \n");
+        String userSuit = input.next(); 
+         System.out.println("Pick a value(1-13): ");
+        int userValue = input.nextInt();
+        
+        boolean cardEqual = false;
+
+        for (int i=0; i<magicHand.length; i++){
+            if(userSuit.equals(magicHand[i].getSuit()) && userValue == magicHand[i].getValue()) {
+                cardEqual = true;
+            }
+        }
+
+        
+        if (cardEqual) {
+            printInfo();
+        } else {
+            System.out.println("Card is not same"); 
          }
+   
+    }
+    
+    //I'm done
+    public static void printInfo() {
+        System.out.println("I am Maryam Khatib,20, and an international student");
+    }
     
 }
+
