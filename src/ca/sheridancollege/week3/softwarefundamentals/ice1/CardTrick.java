@@ -5,7 +5,7 @@
  * @author dancye
  * @modified by Megha Patel
  * @modified by Murtaza Mian Jan 25, 2022
- * @modified by Jacob O'Hearon
+ * @modified by Jacob O'Hearon Jan 28, 2022
  */
 
 import java.util.Scanner;
